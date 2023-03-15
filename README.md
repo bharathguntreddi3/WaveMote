@@ -57,6 +57,9 @@ clocy = plocy + (index_y - plocy) /smoothening
 # you can multiply or divide with the smotthening
 ```
 
+## If any error occurs while using the library or installation check your pip and just go for the pre-requisite libraries documentation.
+## Nothing is free of errors, right!
+
 # More virtual features and functions will be added later!!!
 
 <h3>If any necessary commits are required to increase the elegance of this repo! i'm always open for a PR.</h3>
