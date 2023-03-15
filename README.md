@@ -4,6 +4,13 @@
 
 <img src="https://user-images.githubusercontent.com/95229816/185941431-83ba8fc6-0863-4a9b-a8ef-9908a29bd9ba.png">
 
+## To install and use WaveMote
+```python
+# pip install waveMote
+import WaveMote as wm
+wm.mouse()
+```
+
 <u><h2>The mouse is the one of the wonderfull inventions of the Human Computer Interaction(HCI) Technology.</h2></u>
 <h3>Currently we are using wired or may be wireless mouses,In real time cases some computers may not support for a physical mouse or may some users may be dealth with some hand problems or handicap and cannot use physical mouse, so this Hand controlled AI Virtual Mouse can be used to overcome this problem. Making a user to control the mouse by reducing the computer human interaction.</h3>
 
@@ -13,7 +20,6 @@
 <h4> -> Our Index finger can be used to move the mouse over the screen.</h4>
 <h4> -> When Our Index finger and Thumb come close to each other or touch each other then it performs the click operation.</h4>
 <h4> -> And the PyautoGUI for programmatically control the mouse and keyboard.</h4>
-
 
 <h2>Now coming to the code part </h2>
 The Libraries that need to be installed are written in the requirements.txt file
