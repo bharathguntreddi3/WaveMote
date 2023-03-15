@@ -27,14 +27,25 @@ pyautogui - 0.9.53
 pillow - 9.2.0
 ```
 
-### Install the following necessary pip
+### Installation and Usage
+
+#### Install the necessary dependencies by installing packages in requirements.txt
+
 ```sh
-pip install opencv-python
-pip install numpy
-pip install matplotlib
-pip install mediapipe
-pip install PyautoGUI
-pip install PIL
+>>> pip install -r requirements.txt
+```
+
+#### Install the WaveMote by running the following command
+
+```sh
+>>> pip install WaveMote
+```
+#### Now WaveMote is installed , you can use it by creating a new .py file
+
+```python
+import WaveMote as wm
+
+wm.mouse()
 ```
 
 ### The actual working of the mouse is based on the Hand Landmarks which can be viewed and controlled by opencv and mediapipe.
