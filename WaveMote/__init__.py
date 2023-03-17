@@ -65,6 +65,9 @@ def mouse():
                             pyautogui.click()
                             pyautogui.sleep(1)
         cv2.imshow('Virtual Mouse', frame)  # show image
-        cv2.waitKey(1)  # waits for key infinitely
+        # cv2.waitKey(1)  # waits for key infinitely
+        k = cv2.waitKey(30) & 0xff
+        if k==27:
+            break   # added key 'esc' to terminate the process and quit from infinite loop
         
 mouse()
