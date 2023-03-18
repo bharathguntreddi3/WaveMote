@@ -70,4 +70,43 @@ def mouse():
         if k==27:
             break   # added key 'esc' to terminate the process and quit from infinite loop
         
-mouse()
+# mouse()
+
+# ----------------------------------------------------------------------------------------------------
+def DetectFace():
+    # Load the cascade - https://github.com/opencv/opencv/tree/master/data/haarcascades
+    # haarcascade detects objects in an image
+    face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
+    cap = cv2.VideoCapture(0)
+
+    # To use a video file as input 
+    # cap = cv2.VideoCapture('filename.mp4')
+
+    while True:
+        # Read the frame
+        _, img = cap.read()
+
+        # Convert to grayscale
+        gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+
+        # Detect the faces
+        faces = face_cascade.detectMultiScale(gray, 1.1, 4)
+
+        # for the rectangular co oridinates of the face
+        # for (x, y, w, h) in faces:
+        #     cv2.rectangle(img, (x, y), (x+w, y+h), (255, 0, 0), 2)
+
+        # for the circular co ordinates of the face
+        for (x, y, w, h) in faces:
+            center_coordinates = x+w//2, y+h//2
+            radius = w//2
+            cv2.circle(img, center_coordinates, radius, (0,255,0), 2)
+
+        cv2.imshow('img', img)
+        # esc to stop
+        k = cv2.waitKey(30) & 0xff
+        if k==27:
+            break
+    cap.release()
+
+# DetectFace()
