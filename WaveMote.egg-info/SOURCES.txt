@@ -3,6 +3,7 @@ LICENSE.txt
 MANIFEST.in
 README.md
 setup.py
+test.py
 WaveMote/__init__.py
 WaveMote.egg-info/PKG-INFO
 WaveMote.egg-info/SOURCES.txt
