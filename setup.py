@@ -13,11 +13,11 @@ classifiers = [
 
 setup(
     name = 'WaveMote',
-    version= '1.0.0.1',
+    version= '1.3.0.1',
     description= 'A Gestures based Hand Controlled Virtual Mouse',
     long_description= long_description,
     long_description_content_type='text/markdown',
-    url= 'https://github.com/bharathguntreddi3/Hand-Controlled-AI-Virtual-Mouse',
+    url= 'https://github.com/bharathguntreddi3/WaveMote.git',
     author= 'Bharath Guntreddi',
     author_email= 'guntreddibharath@gmail.com',
     license= 'MIT',

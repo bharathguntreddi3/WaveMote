@@ -76,7 +76,7 @@ def mouse():
 def DetectFace():
     # Load the cascade - https://github.com/opencv/opencv/tree/master/data/haarcascades
     # haarcascade detects objects in an image
-    face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
+    face_cascade = cv2.CascadeClassifier('haarcascade/haarcascade_frontalface_default.xml')
     cap = cv2.VideoCapture(0)
 
     # To use a video file as input 
