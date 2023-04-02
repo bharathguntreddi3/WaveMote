@@ -1,4 +1,4 @@
-<h1 align=center>WaveMote🖱️👆</h1>
+<h1 align=center>WaveMote🖱️🤞</h1>
 <h2 align=center>Version - 1.3.0.1</h2>
 <!--This is an AI based Virtual Mouse controlled by our hand gestures and hand detection.-->
 
